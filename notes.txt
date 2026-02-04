@@ -5,3 +5,13 @@ Deep learning is an approach where neural networks make deep stacks of computati
 It is used for tasks like natural language translation, image recognition, and game playing, often achieving human-level or better performance.
 
 Each neuron in a neural network performs a simple computation, but the power of deep learning comes from the complexity and depth of the connections between these neurons.
+
+
+We can represents that neuron by a mathematical formula :
+
+y = wx + b 
+
+y is the target data
+x is the input, datasets we collected. Its connection to the neuron has a w weight
+A neural network learns by modifying its weights
+b is a constant we admit that does not influence y that much, it is there to make sure of any uncertainty
