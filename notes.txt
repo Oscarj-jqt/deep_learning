@@ -17,3 +17,4 @@ w is the weight of the connection to the neuron.
 b is the bias, a constant that allows the neuron to adjust its output independently of the input.
 y is the output (the value produced by the neuron).
 A neural network learns by adjusting its weights (w) and bias (b) to better fit the data.
+
