@@ -11,12 +11,6 @@ The Linear Unit
 
 A neuron can be represented by a simple mathematical formula:
 
-y
-=
-w
-x
-+
-b
 y=wx+b
 x is the input (data we collected).
 w is the weight of the connection to the neuron.
