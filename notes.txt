@@ -1,7 +1,7 @@
 Deep Learning
 
-Approach where neurons network make deep stacks of computations in order to 
-solve complex and hierarchical patterns
+Deep learning is an approach where neural networks make deep stacks of computations to solve complex and hierarchical patterns.
 
-It helps for natural language translation, image recognition, game playing at the same or better than human-level performance
+It is used for tasks like natural language translation, image recognition, and game playing, often achieving human-level or better performance.
 
+Each neuron in a neural network performs a simple computation, but the power of deep learning comes from the complexity and depth of the connections between these neurons.
