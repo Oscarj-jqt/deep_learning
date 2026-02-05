@@ -40,4 +40,4 @@ model = keras.Sequential([
 ```
 
 - **units** define how many outputs we want.
-- **input_shape** is the number of x features to train the model.
+- **input_shape** is the number of columns x features without the target chosen to train the model.
