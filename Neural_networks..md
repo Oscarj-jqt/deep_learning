@@ -19,10 +19,12 @@
     from tensorflow import keras
     from tensorflow.keras import layers
 
+    This model has 2 hidden layers, each with 4 units (neurons). Each unit processes the input and applies the ReLU activation, which helps the network learn non-linear patterns. The last layer has 1 unit (neuron) with no activation, producing the final output (often used for regression tasks).
+
     model = keras.Sequential([
-        layers.Dense(units=4, activation='relu', input_shape=[2]),
-        layers.Dense(units=4, activation='relu'),
-        layers.Dense(units=1)
+        layers.Dense(units=4, activation='relu', input_shape=[2]),  
+        layers.Dense(units=4, activation='relu'),                   
+        layers.Dense(units=1)                              
     ])
     ```
 
