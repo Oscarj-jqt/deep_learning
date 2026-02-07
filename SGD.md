@@ -35,5 +35,43 @@
 
 ---
 
+## 7. Complete Example: Building and Training a Deep Neural Network with SGD
+
+```python
+from tensorflow import keras
+from tensorflow.keras import layers
+
+# Define the model architecture
+model = keras.Sequential([
+    layers.Dense(512, activation='relu', input_shape=[11]),  # First hidden layer: 512 units, ReLU activation
+    layers.Dense(512, activation='relu'),                    # Second hidden layer: 512 units, ReLU activation
+    layers.Dense(512, activation='relu'),                    # Third hidden layer: 512 units, ReLU activation
+    layers.Dense(1),                                         # Output layer: 1 unit (for regression)
+])
+
+# Compile the model with SGD optimizer and MAE loss
+model.compile(
+    optimizer='sgd',     # Stochastic Gradient Descent optimizer
+    loss='mae'           # Mean Absolute Error loss
+)
+
+# Train the model
+history = model.fit(
+    X_train, y_train,
+    validation_data=(X_valid, y_valid),  # Use validation data to monitor performance
+    batch_size=256,                      # Number of samples per batch
+    epochs=10                            # Number of times to go through the dataset
+)
+```
+
+**Notes:**
+- Start with a simple architecture and adjust based on validation loss.
+- The batch size and number of epochs are important hyperparameters.
+- Use validation data to check if your model is overfitting or underfitting.
+
+---
+
+This example shows the full process: defining the model, compiling it with the optimizer and loss, and training it on your data.
+
 **Summary:**  
 SGD is a method to train neural networks by updating weights in small steps using random batches of data, aiming to minimize the loss function. The learning rate and batch size are key parameters for effective training.
