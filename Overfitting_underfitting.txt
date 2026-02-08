@@ -9,3 +9,22 @@
 - Underfitting: Both losses stay high.
 - Overfitting: Training loss drops, validation loss rises after a point.
 
+## 3. Capacity
+- Model capacity is how complex the model is (number of layers/units).
+- Too little capacity = underfitting. Too much = overfitting.
+- Adjust capacity to match the complexity of your data.
+
+## 4. Early Stopping
+- Early stopping is a technique to prevent overfitting.
+- Stop training when validation loss stops improving.
+- Use Keras callbacks to implement early stopping:
+    ```python
+    from tensorflow.keras.callbacks import EarlyStopping
+
+    early_stopping = EarlyStopping(
+        patience=5,              # Number of epochs to wait for improvement
+        min_delta=0.001,         # Minimum change to qualify as improvement
+        restore_best_weights=True
+    )
+    ```
+
