@@ -39,7 +39,9 @@
 
 ---
 
-**Summary:**  
-- Underfitting = model too simple, can't learn patterns.
-- Overfitting = model too complex, memorizes training data, poor generalization.
-- Use learning curves, adjust model capacity, and apply early stopping to find the right balance.
+
+## Real Example: Interpreting Learning Curves (Quick Notes)
+
+- **Small gap, both losses flat:** Likely underfitting. Model too simple, can't learn patterns.Try a bigger model.
+- **Validation loss rises, training loss drops:** Overfitting. Model too complex, memorizes training data, poor generalization.Try a smaller model or use early stopping.
+- **Early stopping:** Stops training at the best validation loss, helps avoid overfitting. Use learning curves, adjust model capacity, and apply early stopping to find the right balance.
