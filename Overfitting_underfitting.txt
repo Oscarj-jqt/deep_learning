@@ -28,3 +28,18 @@
     )
     ```
 
+## 5. Example: Training with Early Stopping
+    ```python
+    history = model.fit(
+        X_train, y_train,
+        validation_data=(X_valid, y_valid),
+        callbacks=[early_stopping]
+    )
+    ```
+
+---
+
+**Summary:**  
+- Underfitting = model too simple, can't learn patterns.
+- Overfitting = model too complex, memorizes training data, poor generalization.
+- Use learning curves, adjust model capacity, and apply early stopping to find the right balance.
