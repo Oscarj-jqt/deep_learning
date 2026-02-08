@@ -1,0 +1,11 @@
+# Overfitting and Underfitting — Essential Notes
+
+## 1. What are Overfitting and Underfitting?
+- **Underfitting:** The model is too simple and cannot capture the patterns in the data. Both training and validation loss are high.
+- **Overfitting:** The model is too complex and memorizes the training data, but performs poorly on new (validation) data. Training loss is low, but validation loss increases.
+
+## 2. Learning Curves
+- Plotting training and validation loss over epochs helps spot underfitting and overfitting.
+- Underfitting: Both losses stay high.
+- Overfitting: Training loss drops, validation loss rises after a point.
+
