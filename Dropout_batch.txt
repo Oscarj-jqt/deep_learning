@@ -1,0 +1,16 @@
+# Dropout and Batch Normalization — Essential Notes
+
+## 1. Dropout
+- Dropout is a technique to prevent overfitting in neural networks.
+- During training, dropout randomly "drops" (sets to zero) a fraction of the units in a layer for each batch.
+- This forces the network to learn more robust features, not relying too much on any single neuron.
+- Typical dropout rates are between 0.2 and 0.5.
+- Example:
+    ```python
+    model = keras.Sequential([
+        layers.Dense(16, activation='relu'),
+        layers.Dropout(0.3),  # 30% dropout
+        layers.Dense(10)
+    ])
+    ```
+
