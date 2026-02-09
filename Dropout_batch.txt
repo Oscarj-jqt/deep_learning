@@ -14,3 +14,16 @@
     ])
     ```
 
+## 2. Batch Normalization
+- Batch normalization ("batchnorm") normalizes the outputs of a layer to stabilize and speed up training.
+- It helps the network train faster and can improve performance, especially on difficult datasets.
+- Batch normalization can be added before or after the activation function.
+- Example:
+    ```python
+    model = keras.Sequential([
+        layers.Dense(16, activation='relu'),
+        layers.BatchNormalization(),
+        layers.Dense(10)
+    ])
+    ```
+
