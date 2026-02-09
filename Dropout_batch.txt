@@ -27,3 +27,28 @@
     ])
     ```
 
+## 3. Using Both Together
+- You can combine dropout and batch normalization in the same model.
+- Example:
+    ```python
+    model = keras.Sequential([
+        layers.Dense(128, activation='relu'),
+        layers.BatchNormalization(),
+        layers.Dropout(0.3),
+        layers.Dense(64, activation='relu'),
+        layers.BatchNormalization(),
+        layers.Dropout(0.3),
+        layers.Dense(1)
+    ])
+    ```
+
+## 4. Tips
+- After adding dropout, you may need to increase the number of units in your layers.
+- Batch normalization can act like an adaptive standardization of your data inside the network.
+
+---
+
+**Summary:**  
+- Dropout helps prevent overfitting by randomly disabling neurons during training.
+- Batch normalization stabilizes and speeds up training by normalizing activations.
+- Both are commonly used in modern deep learning models for better performance.
