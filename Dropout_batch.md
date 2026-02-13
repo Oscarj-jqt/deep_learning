@@ -42,9 +42,25 @@
     ])
     ```
 
-## 4. Tips
-- After adding dropout, you may need to increase the number of units in your layers.
-- Batch normalization can act like an adaptive standardization of your data inside the network.
+## Real Example: Training a Model with Dropout and Batch Normalization
+
+Below is a typical workflow for training a deep learning model using dropout and batch normalization. This example shows how to compile the model, fit it to the data, and visualize the training and validation loss.
+
+```python
+model.compile(
+    optimizer='sgd',
+    loss='mae',
+    metrics=['mae'],
+)
+
+EPOCHS = 100
+history = model.fit(
+    X_train, y_train,
+    validation_data=(X_valid, y_valid),
+    batch_size=64,
+    epochs=EPOCHS,
+    verbose=0,
+)
 
 ---
 
