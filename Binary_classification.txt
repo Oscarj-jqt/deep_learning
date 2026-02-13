@@ -3,3 +3,7 @@
 ## 1. What is Binary Classification?
 - Binary classification is a type of machine learning where the goal is to predict one of two possible outcomes (e.g., yes/no, 0/1, true/false).
 - Examples: spam detection, disease diagnosis, etc.
+
+## 2. Accuracy and Cross-Entropy
+- **Accuracy:** Measures the proportion of correct predictions.
+- **Cross-entropy loss:** Measures how well the predicted probabilities match the true labels. Lower cross-entropy means better predictions.
