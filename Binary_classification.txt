@@ -7,3 +7,18 @@
 ## 2. Accuracy and Cross-Entropy
 - **Accuracy:** Measures the proportion of correct predictions.
 - **Cross-entropy loss:** Measures how well the predicted probabilities match the true labels. Lower cross-entropy means better predictions.
+
+## 3. The Sigmoid Function
+- The sigmoid activation function outputs values between 0 and 1, making it suitable for binary classification.
+- Formula: $\sigma(x) = \frac{1}{1 + e^{-x}}$
+- The output can be interpreted as the probability of the positive class.
+
+## 4. Model Structure for Binary Classification
+- Typical model:
+    ```python
+    model = keras.Sequential([
+        layers.Dense(units=16, activation='relu', input_shape=[n_features]),
+        layers.Dense(units=1, activation='sigmoid')
+    ])
+    ```
+- The last layer uses a sigmoid activation to output a probability.
