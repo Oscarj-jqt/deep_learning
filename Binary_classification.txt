@@ -41,3 +41,14 @@
         metrics=['binary_accuracy'],
     )
     ```
+
+## 6. Evaluating the Model
+- Plot training and validation loss and accuracy to monitor performance.
+- The best model has low validation loss and high validation accuracy.
+
+---
+
+**Summary:**  
+- Binary classification predicts one of two outcomes.
+- Use sigmoid activation and binary cross-entropy loss.
+- Monitor accuracy and loss to evaluate your model.
