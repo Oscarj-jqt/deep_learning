@@ -32,3 +32,12 @@
         metrics=['binary_accuracy'],
     )
     ```
+    ## 5. Compiling and Training the Model
+- Use binary cross-entropy as the loss function and track accuracy:
+    ```python
+    model.compile(
+        optimizer='adam',
+        loss='binary_crossentropy',
+        metrics=['binary_accuracy'],
+    )
+    ```
