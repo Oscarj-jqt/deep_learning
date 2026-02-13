@@ -62,6 +62,19 @@ history = model.fit(
     verbose=0,
 )
 
+# Visualize the learning curves
+history_df = pd.DataFrame(history.history)
+history_df.loc[0:, ['loss', 'val_loss']].plot()
+print(("Minimum Validation Loss: {:0.4f}").format(history_df['val_loss'].min()))
+```
+
+**Explanation:**
+- The model is compiled with SGD optimizer and MAE loss.
+- Training runs for 100 epochs with a batch size of 64.
+- Both training and validation loss are tracked and plotted to monitor overfitting or underfitting.
+- The minimum validation loss is printed to help select the best model.
+
+This process helps you evaluate how well dropout and batch normalization are working in practice.
 ---
 
 **Summary:**  
