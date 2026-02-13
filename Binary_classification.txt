@@ -1,0 +1,5 @@
+# Binary Classification — Essential Notes
+
+## 1. What is Binary Classification?
+- Binary classification is a type of machine learning where the goal is to predict one of two possible outcomes (e.g., yes/no, 0/1, true/false).
+- Examples: spam detection, disease diagnosis, etc.
