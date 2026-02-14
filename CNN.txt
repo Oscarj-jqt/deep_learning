@@ -30,3 +30,8 @@ model = keras.Sequential([
     layers.Dense(128, activation='relu'),
     layers.Dense(num_classes, activation='softmax')
 ])
+
+# Compile and train
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+history = model.fit(train_ds, validation_data=valid_ds, epochs=10)
+```
