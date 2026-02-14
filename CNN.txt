@@ -22,3 +22,11 @@ valid_ds = image_dataset_from_directory(...)
 
 # Define pretrained base
 pretrained_base = tf.keras.applications.EfficientNetB0(include_top=False)
+
+# Attach head
+model = keras.Sequential([
+    pretrained_base,
+    layers.Flatten(),
+    layers.Dense(128, activation='relu'),
+    layers.Dense(num_classes, activation='softmax')
+])
