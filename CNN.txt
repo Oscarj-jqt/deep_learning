@@ -7,3 +7,9 @@ Convutional Neural networks
 ## 2. Structure of a CNN
 - **Base:** Pretrained convolutional layers extract features from input images.
 - **Head:** New layers (often dense) are added to classify the extracted features into your target classes.
+
+## 3. Training a CNN
+- Load image data and preprocess it for training.
+- Use a pretrained base (like EfficientNet or ResNet) to leverage learned features.
+- Attach a new head for your specific classification task.
+- Compile and train the model on your dataset.
