@@ -13,3 +13,12 @@ Convutional Neural networks
 - Use a pretrained base (like EfficientNet or ResNet) to leverage learned features.
 - Attach a new head for your specific classification task.
 - Compile and train the model on your dataset.
+
+## 4. Example Workflow
+```python
+# Load and preprocess image data
+train_ds = image_dataset_from_directory(...)
+valid_ds = image_dataset_from_directory(...)
+
+# Define pretrained base
+pretrained_base = tf.keras.applications.EfficientNetB0(include_top=False)
