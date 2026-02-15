@@ -1,4 +1,4 @@
-Convutional Neural networks
+# Convutional Neural networks
 
 ## 1. What is a Convolutional Classifier?
 - A convolutional classifier is a neural network designed for image classification.
