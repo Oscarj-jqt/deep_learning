@@ -1,0 +1,27 @@
+
+Convolution and ReLU — Simple Notes
+
+1. What is Convolution?
+- Convolution is a way for computers to look for patterns in images (like edges, shapes, or textures).
+- It uses a small grid of numbers (called a filter or kernel) that slides over the image and highlights important features.
+
+Real-life example: Imagine you want a computer to recognize a car in a photo. Convolution helps the computer find the wheels, windows, and outlines by scanning the image with different filters.
+
+2. How does it work?
+- The filter moves across the image, multiplying its numbers with the image pixels and adding them up. This creates a new image that shows where the pattern is found.
+- Different filters can find different things (like vertical edges, horizontal edges, or corners).
+
+3. What is ReLU?
+- ReLU stands for Rectified Linear Unit. It is a simple function that keeps only positive values and turns all negative values into zero.
+- Formula: ReLU(x) = max(0, x)
+
+Why use ReLU?
+- It helps the computer focus on the important patterns and ignore the rest.
+- It makes the learning process faster and more stable.
+
+4. How does this help in real life?
+- By using convolution and ReLU together, computers can learn to recognize objects in photos, like cars, faces, or animals.
+- These steps are repeated many times in deep learning models to build up a strong understanding of the image.
+
+Summary:
+Convolution finds patterns in images. ReLU keeps only the important parts. Together, they help computers “see” and understand pictures, just like humans do.
