@@ -10,3 +10,7 @@
 - Then it applies an activation function to produce the prediction:
   - \( \hat{y} = f(z) \)
 
+## 3. Classic Activation Function (Rosenblatt)
+- The classic perceptron uses a **step / threshold function**:
+  - **Heaviside** (outputs 0/1, or -1/+1 depending on convention)
+
