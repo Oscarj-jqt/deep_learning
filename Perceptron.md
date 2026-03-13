@@ -14,3 +14,8 @@
 - The classic perceptron uses a **step / threshold function**:
   - **Heaviside** (outputs 0/1, or -1/+1 depending on convention)
 
+## 4. What Problems Can a Perceptron Solve?
+- A perceptron converges (and can perfectly classify) **only if the data is linearly separable**.
+- It **cannot** solve non-linearly separable problems such as:
+  - **XOR**, because XOR is **not linearly separable**.
+
