@@ -19,3 +19,13 @@
 - It **cannot** solve non-linearly separable problems such as:
   - **XOR**, because XOR is **not linearly separable**.
 
+## 5. Perceptron Learning Rule
+- Weight update rule:
+  - \( \Delta w = \eta \,(y_{\text{true}} - y_{\text{pred}})\,x \)
+  - \( w \leftarrow w + \Delta w \)
+- If the prediction is correct (\(y_{\text{true}} = y_{\text{pred}}\)):
+  - \( \Delta w = 0 \) → **weights are not changed**
+- Learning rate \( \eta \):
+  - controls the **magnitude of weight corrections**
+  - too large can destabilize training; too small slows learning
+
